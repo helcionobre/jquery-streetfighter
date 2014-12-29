@@ -1,0 +1,24 @@
+$(document).ready(function () {
+	$(".ryu").mouseenter(function() {
+		//alert('mouse entered .ryu div');//
+		$('.ryu-still').hide();
+		$('.ryu-ready').show();
+	}).mouseleave(function() {
+		//alert('mouse left');//
+		$('.ryu-still').show();
+		$('.ryu-ready').hide();
+	}).mousedown(function() {
+		// console.log('mousedown');
+		$('.ryu-ready').hide();
+		$('.ryu-throwing').show();
+		$('.hadouken').show();
+		// ryu to throwing position
+		// play hadouken sound
+		// show hadouken and animate it to the right
+	}).mouseup(function() {
+		// console.log('mouseup');
+		$('.ryu-throwing').hide();
+		$('.ryu-ready').show();
+		// ryu goes back to ready position
+	})
+});
